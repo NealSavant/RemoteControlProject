@@ -10,6 +10,7 @@ public class RemoteControlApp {
 		System.out.println("To begin, turn on the remote control: ");
 		Scanner sc = new Scanner(System.in);
 		
+		String input = "";
 		
 	}
 	
