@@ -5,6 +5,12 @@ import java.util.Scanner;
 public class RemoteControlApp {
 
 	public static void main(String[] args) {
+		//read user input
+		inputSensor();
+
+	}
+	
+	public static void inputSensor() {
 		// is the remote control turned on?
 		boolean online = false;
 		// prompt user
@@ -33,7 +39,6 @@ public class RemoteControlApp {
 		}
 
 		sc.close();
-
 	}
 
 	public static boolean powerButton(boolean status) {
