@@ -29,7 +29,7 @@ public class RemoteControlApp {
 		while (online == true) {
 			System.out.println("PLEASE PRESS A BUTTON 1-9");
 			input = sc.next();
-			pressButton(input);
+			online = pressButton(input);
 		}
 
 		sc.close();
@@ -49,45 +49,45 @@ public class RemoteControlApp {
 		return action;
 	}
 
-	public static String pressButton(String choice) {
-		String action = choice;
+	public static Boolean pressButton(String choice) {
+		Boolean action = true;
 
 		// switch statement with buttons
 		switch (choice) {
 		case "1":
 			System.out.println("Beep Boop!");
-			return action;
+			break;
 		case "2":
 			System.out.println("Boop Bop!");
-			return action;
+			break;
 		case "3":
 			System.out.println("Wzzzzzding bang!");
-			return action;
+			break;
 		case "4":
 			System.out.println("BEEP BEEP BEEP!");
-			return action;
+			break;
 		case "5":
 			System.out.println("Brrriiiing!");
-			return action;
+			break;
 		case "6":
 			System.out.println("Shk-Shk-Shk-Shk!");
-			return action;
 		case "7":
-			System.out.println("Beep Boop!");
-			return action;
+			System.out.println("Ribbit!");
+			break;
 		case "8":
-			System.out.println("Beep Boop!");
-			return action;
+			System.out.println("Whillhelm Scream.");
+			break;
 		case "9":
-			System.out.println("Beep Boop!");
-			return action;
+			System.out.println("Dada dadum dooda duuu");
+			break;
 		case "off":
-			powerButton(false);
+			action = powerButton(false);
 			return action;
 		default:
 			System.out.println("Command not recognized");
 			return action;
 		}
+		return action;
 	}
 
 }
