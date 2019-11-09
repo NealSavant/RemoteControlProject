@@ -1,4 +1,4 @@
-//AUTHOR : Neal Savant
+//@author : Neal Savant
 
 import java.util.Scanner;
 
