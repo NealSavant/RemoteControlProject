@@ -33,6 +33,7 @@ public class RemoteControlApp {
 		// user has turned on the program
 
 		while (online == true) {
+			System.out.println();
 			System.out.println("PLEASE PRESS A BUTTON 1-9");
 			input = sc.next();
 			online = pressButton(input);
