@@ -32,7 +32,7 @@ public class RemoteControlApp {
 
 		// user has turned on the program
 
-		while (online == true) {
+		while (online) {
 			System.out.println();
 			System.out.println("PLEASE PRESS A BUTTON 1-9");
 			input = sc.next();
@@ -77,6 +77,7 @@ public class RemoteControlApp {
 			break;
 		case "6":
 			System.out.println("Shk-Shk-Shk-Shk!");
+			break;
 		case "7":
 			System.out.println("Ribbit!");
 			break;
